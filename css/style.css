@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    letter-spacing: 0.2rem;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+.btn {
+    position: relative;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: none;    
+    border: solid 0.2rem #ac9468;
+    color: #fff !important;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s linear;
+}
+.btn a {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: none;
+    outline: none;
+    background: #ac9468;
+    transition: all 0.3s linear;
+}
+.btn:hover::after {
+    width: 100%;
+}
+.heading {
+    color: #474647;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.heading-underline {
+    width: 3.5rem;
+    height: .3rem;
+    background-color: #1ebba3;
+    margin-top: 1.2rem;
+}
+
+/*==================== TOP BAR HEADER =================*/
+.top-bar {
+    background: #145477 ;
+    height: 1.8rem;
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+}
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding-right: 1rem;
+}
+.top-bar a:hover {
+    text-decoration: underline;
+}
+.top-bar a:last-child, .top-bar a:nth-child(2) {
+    border-left: solid 0.1rem #444;
+    padding-left: 1rem;
+}
+
+/*==================== MIDDLE BAR HEADER =================*/
+.middle-bar .logo img {
+    height: 7.5rem;
+}
+.middle-bar .col-lg-10 .item {
+    display: flex;
+    margin-right: 2rem;
+    font-size: 0.9rem;
+}
+.middle-bar .col-lg-10 .item i {
+    margin-right: 1.2rem;
+    font-size: 1rem;
+}
+
+
+/*==================== NAVBAR HEADER =================*/
+
+.navbar {
+    background: #175c23 !important;
+    background: #145477 !important;
+    font-size: 1.15rem;
+    font-weight: 600;
+    box-shadow: 0.1rem 0rem 0.1rem #175c23;
+    /* padding: 1rem 0; */
+}
+.nav-item {
+    padding: 0.5rem 1rem;
+}
+.nav-link {
+    color: #fff !important;
+    /* text-transform: uppercase; */
+    font-size: 0.9375rem;
+}
+.nav-link:hover, .nav-link.active {
+    /* color:  #02cf28!important; */
+    color:  #00bcda!important;
+}
+.navbar-toggler-icon {
+    color: #111;
+    outline: none!important;
+    font-size: 2rem;
+    border: solid 0.2rem #111;
+}
+.dropdown-menu {
+    transform: translateY(15%);
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.dropdown-item {
+    color: #333;
+    background-color: none !important;
+    padding: 0.5rem;
+}
+.dropdown-item:hover {
+    color: #02cf28;
+}
+
+/*==================== HERO =================*/
+.hero, .carousel-inner {
+    height: 70vh;
+}
+.hero .carousel-inner .carousel-item {
+    height: 70vh;
+}
+.carousel-item {
+    transition: all 1.3s linear;
+}
+.carousel-item img {
+    object-fit: cover;
+}
+.hero .carousel-caption {
+    position: absolute;
+    top: 10%;
+}
+.hero .carousel-caption .col-8 {
+    background: rgba(0,0,0,0.5);
+    padding: 1.5rem 0.9rem;
+}
+
+/* hero small */
+.hero-small {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+    url('/img/pexels-josh-sorenson-1714208.jpg');
+    height: 25vh;
+    padding: 5rem;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+/*==================== ABOUT SECTION =====================*/
+.heading-1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.01rem;
+    color: #444;
+}
+.heading-2 {
+    color: #121212;
+    font-weight: 700;
+}
+.about-text p {
+    font-size: 1.2rem;    
+}
+.about-text .btn a {
+    color: #111;
+    font-size: 1.2rem;
+}
+.about-text .btn:hover a {
+    color: #fff;
+}
+
+/* about page */
+.about .col-md-4 .container {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('/img/pexels-josh-sorenson-1714208.jpg');
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: linear 0.5s;
+}
+.about .col-md-4 .container:hover {
+    transform: translateY(-5%);
+}
+
+/*==================== STATS SECTION =====================*/
+
+.stats {
+    background: #121212;
+    color: #fff;
+    background-attachment: fixed;
+}
+.stats h2 {
+    color: #ff8c00;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-top: 1rem;
+}
+.stats i {
+    font-size: 2.2rem;
+}
+.stats p {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*==================== SERVICES SECTION =====================*/
+.services {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.services .col-md-3 .container {
+    /* border: solid 0.2rem #222; */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('/img/pexels-josh-sorenson-1714208.jpg');
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    color: #fff;
+    z-index: 1;
+}
+.services .col-md-3 .container::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    background: #222;
+    z-index: -1;
+    transition: 0.5s linear;
+}
+.services .col-md-3 .container h4,
+.services .col-md-3 .container p {
+    z-index: 1;
+}
+.services i {
+    border-radius: 50%;
+    border: solid 0.2rem #ff8c00;
+    border: solid 0.2rem  #00bcda;
+    padding: 1rem;
+}
+.services .col-md-3 .container:hover::after {
+    height: 100%;
+}
+.services .col-md-3 .container:hover i,
+.services .col-md-3 .container:hover p,
+.services .col-md-3 .container:hover h4 {
+    color: white;
+}
+
+.services .btn a {
+    color: #333333;
+}
+
+
+/*==================== CALL TO ACTION SECTION =====================*/
+.action {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: transparent;
+    color: white !important;
+    min-height: 100vh;
+}
+.ac tion::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: 'jgfghc';
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 118, 153, 0.2);
+    display: block;
+    /* padding: 10rem; */
+}
+
+.action h2 {
+    color: #21f4fc;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+.action h4 {
+    font-style: 1.5rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.action .button {
+    border: 0.3rem solid #00bcda;
+    padding: 1.1rem 1.2rem;
+    color: #fff;
+    border-radius:0;
+    font-size: 1.2rem;
+    background: #00bcda;
+    text-decoration: none;
+}
+.action .button:hover {
+    background:  #025a68;
+    transition: ease 0.3s;
+}
+
+
+
+
+/*==================== NEWS SECTION =====================*/
+.news {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.news .image {
+    position: relative;
+    overflow: hidden;
+}
+.news .image .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff8c00;
+    padding: 0.7rem 0.2rem;
+    color: #121212;
+    font-weight: 500;
+}
+.news .image img {
+    transition: ease-in 1s;
+}
+.news .col-md-4:hover .image img {
+    transform: scale(1.5);    
+}
+
+
+/*==================== BOARD SECTION =====================*/
+.directors {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.directors .container-fluid {
+    padding: 0;
+    padding-bottom: 1.75rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: linear 0.3s;
+}
+.directors .container-fluid:hover {
+    transform: translateY(-1%);
+}
+.directors .image {
+    position: relative;
+    overflow: hidden;
+}
+.directors .image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+}
+.directors h6 {
+    font-size: 1rem;
+    color: #333333;
+    text-transform: uppercase;
+}
+.directors p {
+    font-size: 0.875rem;
+}
+.directors i {
+    color: #ac9468;
+    border-radius: 50%;
+    border: 0.16rem solid #ac9468;
+    padding: 0.4rem;
+    transition: linear 0.3s;
+}
+.directors i:hover {
+    background: #ac9468;
+    color: #fff;
+}
+
+
+/*==================== BENEFITS SECTION =====================*/
+.benefits {
+    background: #00bcda;
+}
+.benefits .content {
+    align-self: center;
+}
+.benefits .content h3 {
+    font-size: 2.75rem;
+}
+.benefits .content p {
+    font-size: 1rem;
+}
+.benefits img {
+    object-fit: cover;
+}
+
+.fees .icon {
+    font-size: 2rem;
+}
+.about span.icon {
+    font-size: 1.5rem;
+    padding-right: 1.1rem;
+    color: #00cbd0;
+}
+/*==================== FOOTER SECTION =====================*/
+
+.footer {
+    background: #121212;
+    font-size: 0.75rem;
+}
+.footer .about-f {
+    font-size: 0.75rem;
+    margin-top: 3rem;
+    letter-spacing: 0.1rem;
+}
+.footer .list li {
+    padding-bottom: 0.5rem;
+}
+.footer .list li a {
+    color: #eee;
+}
+.footer .contact-f li {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.2rem;
+}
+.footer .contact-f i {
+    border: 0.2rem solid #ff0000;
+    padding: 0.5rem;
+    background: #ff0000;
+    width: 25%;
+    margin-right: 0.5rem;
+}
+.footer .contact-f a {
+    align-self: center;
+}
+.footer .social-f .list {
+    display: flex;
+    justify-content: center;
+}
+.footer .social-f .list li {
+    padding: 0.75rem;
+}
+.footer .social-f i {
+    font-size: 1.7rem;
+    border: 0.2rem solid #faf3f3;
+    padding: 0.5rem;
+}
+.footer .social-f i:hover {
+    background: #ff8c00;
+    cursor: pointer;
+}
+.fa-twitter{
+    color: #00acee;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-youtube {
+    color: #c4302b;
+}
+
+
+/*==================== MEDIA QUERY =================*/
+
+/* Medium (md) devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    /* top bar */
+    .top-bar {
+        height: auto;
+    }
+    .top-bar .text-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-bar .text-right a {
+        font-size: 0.5rem;
+    }
+
+    /* middle bar */
+    .middle-bar .col-lg-10 {
+        display: none !important;
+        flex-direction: column;
+        text-align: center;
+    }
+    .middle-bar .col-lg-10 .item,
+    .middle-bar .col-lg-10 .item i {
+        font-size: 0.9rem;
+    }
+
+    /* navigation */
+    .navbar-nav {
+        padding: 0.5rem 1.2rem;
+    }
+    .navbar .btn {
+        margin-left: 1.2rem;
+    }
+    .nav-item .nav-link {
+        font-size: 0.9rem;
+    }
+
+    /* call to action */
+    .action h2 {
+        font-size: 3rem;
+    }
+    .action h4 {
+        font-size: 1.5rem;
+
+    }
+    .action .button.ml-2 {
+        display: none;
+    }
+
+    /* benefits section */
+    .benefits .content h3 {
+        font-size: 1.75rem;
+    }
+
+    
+}
