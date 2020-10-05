@@ -97,23 +97,19 @@ ul {
 /*==================== NAVBAR HEADER =================*/
 
 .navbar {
-    background: #175c23 !important;
     background: #145477 !important;
     font-size: 1.15rem;
     font-weight: 600;
     box-shadow: 0.1rem 0rem 0.1rem #175c23;
-    /* padding: 1rem 0; */
 }
 .nav-item {
     padding: 0.5rem 1rem;
 }
 .nav-link {
     color: #fff !important;
-    /* text-transform: uppercase; */
     font-size: 0.9375rem;
 }
 .nav-link:hover, .nav-link.active {
-    /* color:  #02cf28!important; */
     color:  #00bcda!important;
 }
 .navbar-toggler-icon {
@@ -133,7 +129,7 @@ ul {
     padding: 0.5rem;
 }
 .dropdown-item:hover {
-    color: #02cf28;
+    color:  #00bcda!important;
 }
 
 /*==================== HERO =================*/
@@ -280,26 +276,23 @@ ul {
 
 
 /*==================== CALL TO ACTION SECTION =====================*/
-.action {
-    position: relative;
+.action,
+.parallax {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background: transparent;
     color: white !important;
     min-height: 100vh;
 }
-.ac tion::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: 'jgfghc';
-    width: 100%;
-    height: 100%;
-    background: rgba(15, 118, 153, 0.2);
-    display: block;
-    /* padding: 10rem; */
+.action {
+    background: linear-gradient( rgba(15, 118, 153, 0.2), rgba(15, 118, 153, 0.2)),
+    url('/img/pexels-pixabay-236380.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    display: none !important;
 }
 
+.parallax h2, 
 .action h2 {
     color: #21f4fc;
     font-size: 5rem;
@@ -307,6 +300,7 @@ ul {
     text-transform: uppercase;
     padding-bottom: 1.5rem;
 }
+.parallax h4,
 .action h4 {
     font-style: 1.5rem;
     padding-bottom: 1.2rem;
@@ -315,6 +309,7 @@ ul {
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
 }
+.parallax .button,
 .action .button {
     border: 0.3rem solid #00bcda;
     padding: 1.1rem 1.2rem;
@@ -324,6 +319,7 @@ ul {
     background: #00bcda;
     text-decoration: none;
 }
+.parallax .button:hover,
 .action .button:hover {
     background:  #025a68;
     transition: ease 0.3s;
@@ -532,10 +528,10 @@ ul {
 
     /* call to action */
     .action h2 {
-        font-size: 3rem;
+        font-size: 2.1rem;
     }
     .action h4 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
 
     }
     .action .button.ml-2 {
@@ -545,7 +541,15 @@ ul {
     /* benefits section */
     .benefits .content h3 {
         font-size: 1.75rem;
-    }
+    }    
+}
 
-    
+/* Parallax scroll display for small devices */
+@media (max-width: 992px) {
+    .parallax {
+        display: none !important;
+    }
+    .action {
+        display: block !important;
+    }
 }
