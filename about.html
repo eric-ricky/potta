@@ -17,6 +17,9 @@
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- aos css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 <body>
@@ -145,7 +148,7 @@
 
             <div class="row my-5">
                 <div class="col-md-4 my-4 text-center">
-                    <div class="container p-4">
+                    <div data-aos="fade-up" class="container p-4">
                         <i class="material-icons">account_balance</i>
                         <h4 class="my-4">Objective</h4>
                         <p>
@@ -155,7 +158,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 my-4 text-center">
-                    <div class="container p-4">
+                    <div data-aos="fade-up" class="container p-4">
                         <i class="material-icons">account_balance</i>
                         <h4 class="my-4">Mission</h4>
                         <p>
@@ -165,7 +168,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 my-4 text-center">
-                    <div class="container p-4">
+                    <div data-aos="fade-up" class="container p-4">
                         <i class="material-icons">account_balance</i>
                         <h4 class="my-4">Vision</h4>
                         <p>
@@ -187,13 +190,13 @@
     >
         <div class="container align-self-center">
             <div class="col-12">
-                <h2 class="w-50">Advance your career</h2>
-                <h4 class="mb-5 w-75 p-2">
+                <h2 data-aos="fade-up" class="w-50">Advance your career</h2>
+                <h4 data-aos="fade-up" class="mb-5 w-75 p-2">
                     Explore the benefits of becoming a POTTA
                     member and review the Membership available
                 </h4>
-                <a href="/membership.html" class="button mr-2">Become a Member</a>
-                <a href="/membership.html" class="button ml-2">Explore Benefits</a>
+                <a data-aos="fade-up" href="/membership.html" class="button mr-2">Become a Member</a>
+                <a data-aos="fade-up" href="/membership.html" class="button ml-2">Explore Benefits</a>
             </div>
         </div>
     </div>
@@ -201,13 +204,13 @@
     <div class="action d-flex">
         <div class="container align-self-center">
             <div class="col-12">
-                <h2 class="w-50">Advance your career</h2>
-                <h4 class="mb-5 w-75 p-2">
+                <h2 data-aos="fade-up" class="w-50">Advance your career</h2>
+                <h4 data-aos="fade-up" class="mb-5 w-75 p-2">
                     Explore the benefits of becoming a POTTA
                     member and review the Membership available
                 </h4>
-                <a href="/membership.html" class="button mr-2">Become a Member</a>
-                <a href="/membership.html" class="button ml-2">Explore Benefits</a>
+                <a data-aos="fade-up" href="/membership.html" class="button mr-2">Become a Member</a>
+                <a data-aos="fade-up" href="/membership.html" class="button ml-2">Explore Benefits</a>
             </div>
         </div>
     </div>    
@@ -339,7 +342,18 @@
 <!-- parallax.min.js -->
 <script src="js/parallax.min.js"></script>
 
+<!-- aos js cdn -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <!-- custom script -->
 <script src="js/main.js"></script>
+
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 1000
+    });
+</script>
+
 </body>
 </html>

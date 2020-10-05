@@ -17,9 +17,9 @@
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- aos css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- scroll reveal cdn -->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 
@@ -175,7 +175,7 @@
     <div class="about py-5">
         <div class="container">
             <div class="row d-flex">
-                <div class="col-md-6 about-left">
+                <div class="col-md-6 about-left" data-aos="fade-right">
                     <div class="col-12">
                         <h3 class="heading-1"># Welcome to</h3>
                         <h1 class="heading-2">
@@ -197,7 +197,7 @@
                     
                 </div>
 
-                <div class="col-md-6 about-right align-self-center">
+                <div class="col-md-6 about-right align-self-center" data-aos="fade-left">
                     <div class="image">
                         <img src="img/pexels-pixabay-247786.jpg" class="img-fluid" alt="image">
                     </div>
@@ -215,13 +215,13 @@
     >
         <div class="container align-self-center">
             <div class="col-12">
-                <h2 class="w-50">Membership with benefits</h2>
-                <h4 class="mb-5 w-75 p-2">
+                <h2 class="w-50" data-aos="fade-up">Membership with benefits</h2>
+                <h4 class="mb-5 w-75 p-2" data-aos="fade-up">
                     Explore the benefits of becoming a POTTA
                     member and review the Membership available
                 </h4>
-                <a href="/membership.html" class="button mr-2">Become a Member</a>
-                <a href="/membership.html" class="button ml-2">Explore Benefits</a>
+                <a data-aos="fade-up" href="/membership.html" class="button mr-2">Become a Member</a>
+                <a data-aos="fade-up" href="/membership.html" class="button ml-2">Explore Benefits</a>
             </div>
         </div>
     </div>
@@ -229,13 +229,13 @@
     <div class="action d-flex">
         <div class="container align-self-center">
             <div class="col-12">
-                <h2 class="w-50">Membership with benefits</h2>
-                <h4 class="mb-5 w-75 p-2">
+                <h2 data-aos="fade-up" class="w-50">Membership with benefits</h2>
+                <h4 data-aos="fade-up" class="mb-5 w-75 p-2">
                     Explore the benefits of becoming a POTTA
                     member and review the Membership available
                 </h4>
-                <a href="/membership.html" class="button mr-2">Become a Member</a>
-                <a href="/membership.html" class="button ml-2">Explore Benefits</a>
+                <a data-aos="fade-up" href="/membership.html" class="button mr-2">Become a Member</a>
+                <a data-aos="fade-up" href="/membership.html" class="button ml-2">Explore Benefits</a>
             </div>
         </div>
     </div>    
@@ -251,7 +251,7 @@
             </div>
 
             <div class="row my-5 services-bottom">
-                <div class="col-md-3 my-4">
+                <div class="col-md-3 my-4" data-aos="fade-right">
                     <div class="container p-4">
                         <i class="material-icons">account_balance</i>
                         <h4 class="my-4">Lorem ipsum.</h4>
@@ -262,7 +262,7 @@
                     </div>
                 </div>
     
-                <div class="col-md-3 my-4">
+                <div class="col-md-3 my-4" data-aos="fade-up">
                     <div class="container p-4">
                         <i class="material-icons">account_balance</i>
                         <h4 class="my-4">Lorem ipsum.</h4>
@@ -273,7 +273,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3 my-4">
+                <div class="col-md-3 my-4" data-aos="fade-up">
                     <div class="container p-4">
                         <i class="material-icons">account_balance</i>
                         <h4 class="my-4">Lorem ipsum.</h4>
@@ -284,7 +284,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3 my-4">
+                <div class="col-md-3 my-4" data-aos="fade-left">
                     <div class="container p-4">
                         <i class="material-icons">account_balance</i>
                         <h4 class="my-4">Lorem ipsum.</h4>
@@ -363,7 +363,7 @@
             </div>
 
             <div class="row my-5">
-                <div class="col-md-4 my-4 news-left">
+                <div class="col-md-4 my-4 news-left" data-aos="fade-right">
                     <div class="image">
                         <img src="img/pexels-markus-spiske-3970332.jpg" alt="" class="img-fluid">
                         <div class="date">
@@ -386,7 +386,7 @@
                     <a href="#" class="text-primary">Read More</a>
                 </div>
     
-                <div class="col-md-4 my-4 news-bottom">
+                <div class="col-md-4 my-4 news-bottom" data-aos="fade-up">
                     <div class="image">
                         <img src="img/pexels-pixabay-256523.jpg" alt="" class="img-fluid">
                         <div class="date">
@@ -408,7 +408,7 @@
                     <a href="#" class="text-primary">Read More</a>
                 </div>
                 
-                <div class="col-md-4 my-4 news-right">
+                <div class="col-md-4 my-4 news-right" data-aos="fade-left">
                     <div class="image">
                         <img src="img/pexels-lisa-fotios-1369476.jpg" alt="" class="img-fluid">
                         <div class="date">
@@ -583,8 +583,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
 
+    <!-- aos js cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <!-- custom script -->
     <script src="js/main.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
 
     <!-- <script>
         ScrollReveal().reveal('.about-left', {

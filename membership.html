@@ -17,6 +17,9 @@
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- aos css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 <body>
@@ -132,7 +135,7 @@
     <div class="about py-5">
         <div class="container">
             <div class="row d-flex">
-                <div class="col-md-6">
+                <div data-aos="fade-right" class="col-md-6">
                     <div class="col-12">
                         <h2 class="heading">Membership</h2>
                         <div class="heading-underline"></div>
@@ -192,7 +195,7 @@
                     </div>                    
                 </div>
 
-                <div class="col-md-6 align-self-center">
+                <div data-aos="fade-left" class="col-md-6 align-self-center">
                     <div class="image">
                         <img src="img/pexels-pixabay-247786.jpg" class="img-fluid" alt="image">
                     </div>
@@ -213,31 +216,31 @@
                 </div>
                 <div class="col-sm-6 content pl-5">
                     <div class="col-10 pt-5">
-                        <h3 class="heading text-light w-50">
+                        <h3 data-aos="fade-up" class="heading text-light w-50">
                             Supporting your career
                         </h3>
                         <div class="heading-underline mb-3"></div>
-                        <p>
+                        <p data-aos="fade-up">
                             Membership of POTTA provides you with 
                             the tools you need to be the best at
                             what you do.
                         </p>
                     </div>
                     <div class="col-12 mt-5 w-75">
-                        <p class="d-flex">
+                        <p data-aos="fade-up" class="d-flex">
                             <span class="icon pr-3 align-self-center">	&#10004;</span>
                             <span class="text">
                                 Professional Development through specialist
                                 training and workshops
                             </span>
                         </p>
-                        <p class="d-flex">
+                        <p data-aos="fade-up" class="d-flex">
                             <span class="icon pr-3 align-self-center">	&#10004;</span>
                             <span class="text">
                                 Professional Suppotr & Advice
                             </span>
                         </p>
-                        <p class="d-flex">
+                        <p data-aos="fade-up" class="d-flex">
                             <span class="icon pr-3 align-self-center">	&#10004;</span>
                             <span class="text">
                                 Networking Opportunities through regional
@@ -256,7 +259,7 @@
     <div class="about py-5 fees">
         <div class="container">
             <div class="row d-flex">
-                <div class="col-md-6">
+                <div data-aos="fade-right" class="col-md-6">
                     <div class="col-12">
                         <h2 class="heading">Membership Fees</h2>
                         <div class="heading-underline"></div>
@@ -291,7 +294,7 @@
                     </div>                    
                 </div>
 
-                <div class="col-md-6 pt-5">
+                <div data-aos="fade-left" class="col-md-6 pt-5">
                     <div class="image">
                         <img src="img/undraw_online_payments_luau.png" class="img-fluid" alt="image">
                     </div>
@@ -306,7 +309,7 @@
     <!-- -------------- RELATED DOCS SECTION -------------- -->
     <div class="related-docs my-4">
         <div class="container">
-            <div class="col-12">
+            <div data-aos="fade-up" class="col-12">
                 <h5 class="heading">Related Documents</h5>
                 <div class="heading-underline"></div>
                 <div class="pdf mt-3">
@@ -440,11 +443,18 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-<!-- conterup, waypoints.js cdn -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script> -->
+<!-- aos js cdn -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <!-- custom script -->
 <script src="js/main.js"></script>
+
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 1000
+    });
+</script>
+
 </body>
 </html>
