@@ -538,10 +538,20 @@ ul {
         display: none;
     }
 
+    /* hero small */
+    .hero-small {
+        padding: 3rem;
+    }
+
     /* benefits section */
     .benefits .content h3 {
         font-size: 1.75rem;
-    }    
+    } 
+    
+    /* about page */
+    .about-text.w-50 {
+        width: 100% !important;
+    }
 }
 
 /* Parallax scroll display for small devices */
