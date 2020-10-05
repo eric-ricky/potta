@@ -97,6 +97,8 @@ ul {
 /*==================== NAVBAR HEADER =================*/
 
 .navbar {
+    position: sticky !important;
+    top: 0 !important;
     background: #145477 !important;
     font-size: 1.15rem;
     font-weight: 600;
