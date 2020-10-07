@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     letter-spacing: 0.2rem;
     color: #555;
     font-family: 'Poppins', sans-serif;
@@ -558,6 +558,11 @@ ul {
     /* about page */
     .about-text.w-50 {
         width: 100% !important;
+    }
+
+    /* directors */
+    .directors .image {
+        max-height: 20rem;
     }
 }
 
