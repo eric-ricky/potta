@@ -373,6 +373,7 @@ ul {
 .directors .image {
     position: relative;
     overflow: hidden;
+    max-height: 16rem;
 }
 .directors .image::after {
     content: '';
@@ -383,6 +384,10 @@ ul {
     height: 100%;
     display: block;
     background: rgba(0, 0, 0, 0.4);
+    transition: linear 0.3s;
+}
+.directors .container-fluid:hover .image::after {
+    background: rgba(0, 0, 0, 0.1);
 }
 .directors h6 {
     font-size: 1rem;
