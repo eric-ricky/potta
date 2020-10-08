@@ -233,12 +233,12 @@ ul {
     padding-bottom: 5rem;
 }
 .services .col-md-3 .container {
-    /* border: solid 0.2rem #222; */
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url('/img/pexels-josh-sorenson-1714208.jpg');
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
     color: #fff;
+    height: 25rem;
     z-index: 1;
 }
 .services .col-md-3 .container::after {
@@ -253,8 +253,7 @@ ul {
     z-index: -1;
     transition: 0.5s linear;
 }
-.services .col-md-3 .container h4,
-.services .col-md-3 .container p {
+.services .col-md-3 .container h4 {
     z-index: 1;
 }
 .services i {
