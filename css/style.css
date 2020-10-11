@@ -9,41 +9,6 @@ body {
     color: #555;
     font-family: 'Poppins', sans-serif;
 }
-ul {
-    list-style-type: none;
-}
-.btn {
-    position: relative;
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    border-radius: none;    
-    border: solid 0.2rem #ac9468;
-    color: #fff !important;
-    cursor: pointer;
-    background-color: transparent;
-    transition: all 0.3s linear;
-}
-.btn a {
-    color: #fff;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-}
-.btn::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-radius: none;
-    outline: none;
-    background: #ac9468;
-    transition: all 0.3s linear;
-}
-.btn:hover::after {
-    width: 100%;
-}
 .heading {
     color: #474647;
     font-size: 2rem;
@@ -58,7 +23,7 @@ ul {
 
 /*==================== TOP BAR HEADER =================*/
 .top-bar {
-    background: #145477 ;
+    background: #0a7fc3 ;
     height: 1.8rem;
     padding: .5rem 0;
     display: flex;
@@ -79,40 +44,29 @@ ul {
     padding-left: 1rem;
 }
 
-/*==================== MIDDLE BAR HEADER =================*/
-.middle-bar .logo img {
-    height: 7.5rem;
-}
-.middle-bar .col-lg-10 .item {
-    display: flex;
-    margin-right: 2rem;
-    font-size: 0.9rem;
-}
-.middle-bar .col-lg-10 .item i {
-    margin-right: 1.2rem;
-    font-size: 1rem;
-}
-
-
 /*==================== NAVBAR HEADER =================*/
 
 .navbar {
     position: sticky !important;
     top: 0 !important;
-    background: #145477 !important;
+    background: #fff !important;
     font-size: 1.15rem;
     font-weight: 600;
     box-shadow: 0.1rem 0rem 0.1rem #175c23;
 }
+.navbar-brand .logo {
+    width: 7rem;
+    height: 7rem;
+}
 .nav-item {
-    padding: 0.5rem 1rem;
+    padding-right: 0.75rem;
 }
 .nav-link {
-    color: #fff !important;
+    color: #00acee !important;
     font-size: 0.9375rem;
 }
 .nav-link:hover, .nav-link.active {
-    color:  #00bcda!important;
+    color:  #fe346e!important;
 }
 .navbar-toggler-icon {
     color: #111;
@@ -131,45 +85,80 @@ ul {
     padding: 0.5rem;
 }
 .dropdown-item:hover {
-    color:  #00bcda!important;
+    color:  #fe346e!important;
+}
+.btn {
+    padding: 0.1rem 1.5rem;
+    background: #0a7fc3;
+    border: none;
+    outline: none;
+    z-index: 1;
+    position: relative;
+}
+.navbar .btn a {
+    color: #fff;
+    text-decoration: none;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: none;
+    outline: none;
+    background: #fe346e;
+    transition: all 0.3s linear;
+    z-index: -1;
+}
+.btn:hover::after {
+    width: 100%;
 }
 
 /*==================== HERO =================*/
-.hero, .carousel-inner {
-    height: 70vh;
+.carousel-inner .carousel-item {
+    height: 50vh; 
+    color: #222;
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
 }
-.hero .carousel-inner .carousel-item {
-    height: 70vh;
+.banner {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50vh;
 }
-.carousel-item {
-    transition: all 1.3s linear;
-}
-.carousel-item img {
-    object-fit: cover;
-}
-.hero .carousel-caption {
+.carousel-caption {
     position: absolute;
-    top: 10%;
+    top: 50%;
+    transform: translateY(-34%);
 }
-.hero .carousel-caption .col-8 {
-    background: rgba(0,0,0,0.5);
-    padding: 1.5rem 0.9rem;
-}
-
-/* hero small */
-.hero-small {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-    url('/img/pexels-josh-sorenson-1714208.jpg');
-    height: 25vh;
-    padding: 5rem;
-    color: #fff !important;
+.carousel-caption h3 {
+    width: 75%;
+    color: #fff;
+    text-align: left;
+    font-size: 3.7rem;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 2rem;
 }
+.carousel-caption h3 span {
+    color: #fe346e;
+} 
+.carousel-caption h6 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+.carousel-control-prev {background-image: none;}
+.carousel-control-next {background-image: none;}
+.carousel-indicators .active {background-color: #fe346e;} *
 
 
 /*==================== ABOUT SECTION =====================*/
+/* .about {
+    /* background: #0a7fc3; */
+} */
 .heading-1 {
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -182,37 +171,29 @@ ul {
     font-weight: 700;
 }
 .about-text p {
-    font-size: 1.2rem;    
+    font-size: 1.2rem; 
+    color: #ccc;   
 }
-.about-text .btn a {
-    color: #111;
-    font-size: 1.2rem;
+.about .btn {
+    background-color: #111;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
-.about-text .btn:hover a {
-    color: #fff;
-}
-
-/* about page */
-.about .col-md-4 .container {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('/img/pexels-josh-sorenson-1714208.jpg');
-    color: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: linear 0.5s;
-}
-.about .col-md-4 .container:hover {
-    transform: translateY(-5%);
+.about .btn a {
+    color: #ccc;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 /*==================== STATS SECTION =====================*/
 
 .stats {
-    background: #121212;
-    color: #fff;
+    background: #0a7fc3;
+    color:#111;
     background-attachment: fixed;
 }
 .stats h2 {
-    color: #ff8c00;
+    color: #111;
     font-weight: 700;
     font-size: 2.4rem;
     margin-top: 1rem;
@@ -231,102 +212,60 @@ ul {
 .services {
     padding-top: 5rem;
     padding-bottom: 5rem;
-}
-.services .col-md-3 .container {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('/img/pexels-josh-sorenson-1714208.jpg');
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
-    color: #fff;
-    height: 25rem;
-    z-index: 1;
-}
-.services .col-md-3 .container::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 0;
-    background: #222;
-    z-index: -1;
-    transition: 0.5s linear;
-}
-.services .col-md-3 .container h4 {
-    z-index: 1;
+    background: #eee;
 }
 .services i {
-    border-radius: 50%;
-    border: solid 0.2rem #ff8c00;
-    border: solid 0.2rem  #00bcda;
     padding: 1rem;
+    /* border: 0.1rem solid #fe346e; */
+    align-self: top;
+    height: 25%;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #fe346e;
+    color: #0066bf;
+    font-size: 2rem;
+    transition: 0.5s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
-.services .col-md-3 .container:hover::after {
-    height: 100%;
+.services i:hover {
+    background-color: #fff;
+    color: #fe346e;
+    transform: translateY(-10%);
 }
-.services .col-md-3 .container:hover i,
-.services .col-md-3 .container:hover p,
-.services .col-md-3 .container:hover h4 {
-    color: white;
+.services .row h4 {
+    font-size: 1.1875rem;
+    font-weight: 600;
+    margin-top: 0;
+    line-height: 1.4;
+    color: #0066bf;
+    transition: 0.3s ease;
 }
-
-.services .btn a {
-    color: #333333;
+.services .row h4:hover {
+    color: #fe346e;
+}
+.services .row .text p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.services .btn {
+    color: #fff !important;
 }
 
 
 /*==================== CALL TO ACTION SECTION =====================*/
-.action,
-.parallax {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    color: white !important;
-    min-height: 100vh;
-}
 .action {
-    background: linear-gradient( rgba(15, 118, 153, 0.2), rgba(15, 118, 153, 0.2)),
-    url('/img/pexels-pixabay-236380.jpg') no-repeat center;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-    display: none !important;
-}
-
-.parallax h2, 
-.action h2 {
-    color: #21f4fc;
-    font-size: 5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 1.5rem;
-}
-.parallax h4,
-.action h4 {
-    font-style: 1.5rem;
-    padding-bottom: 1.2rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-}
-.parallax .button,
-.action .button {
-    border: 0.3rem solid #00bcda;
-    padding: 1.1rem 1.2rem;
+    background: #0a7fc3;
     color: #fff;
-    border-radius:0;
-    font-size: 1.2rem;
-    background: #00bcda;
-    text-decoration: none;
-}
-.parallax .button:hover,
-.action .button:hover {
-    background:  #025a68;
-    transition: ease 0.3s;
 }
 
-
+.action .row .d-flex .btn {
+    margin-left: 2rem;
+    background-color: #fc634a;
+    color: #fff !important;
+}
 
 
 /*==================== NEWS SECTION =====================*/
@@ -354,6 +293,36 @@ ul {
     transform: scale(1.5);    
 }
 
+
+/*==================== ABOUT PAGE =====================*/
+.hero-small {
+    background: #0066bf;
+    height: 20vh;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero-small .container .text-center {
+    margin-top: 2rem;
+}
+.hero-small .container .text-center h2 {
+    font-size: 3rem;
+}
+
+.about-page .about-text p {
+    color: #979595;
+}
+.about-page .col-md-6 h2 {
+    font-size: 1.25rem;
+    color: #007fc6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    text-transform: none;
+}
 
 /*==================== BOARD SECTION =====================*/
 .directors {
@@ -408,36 +377,13 @@ ul {
     color: #fff;
 }
 
-
-/*==================== BENEFITS SECTION =====================*/
-.benefits {
-    background: #00bcda;
-}
-.benefits .content {
-    align-self: center;
-}
-.benefits .content h3 {
-    font-size: 2.75rem;
-}
-.benefits .content p {
-    font-size: 1rem;
-}
-.benefits img {
-    object-fit: cover;
-}
-
-.fees .icon {
-    font-size: 2rem;
-}
-.about span.icon {
-    font-size: 1.5rem;
-    padding-right: 1.1rem;
-    color: #00cbd0;
-}
 /*==================== FOOTER SECTION =====================*/
-
+.footer ul {
+    list-style-type: none;
+}
 .footer {
     background: #121212;
+    background-color: #15305b;
     font-size: 0.75rem;
 }
 .footer .about-f {
@@ -510,20 +456,13 @@ ul {
         font-size: 0.5rem;
     }
 
-    /* middle bar */
-    .middle-bar .col-lg-10 {
-        display: none !important;
-        flex-direction: column;
-        text-align: center;
-    }
-    .middle-bar .col-lg-10 .item,
-    .middle-bar .col-lg-10 .item i {
-        font-size: 0.9rem;
-    }
-
     /* navigation */
     .navbar-nav {
-        padding: 0.5rem 1.2rem;
+        padding: 0.12rem 1.2rem;
+    }
+    .navbar-toggler-icon {
+        height: 2rem;
+        width: 2rem;
     }
     .navbar .btn {
         margin-left: 1.2rem;
@@ -532,45 +471,45 @@ ul {
         font-size: 0.9rem;
     }
 
+    /* hero */
+    .carousel-caption {top: 34%;}
+    .carousel-caption h3 {
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    .carousel-caption h6 {        
+        font-size: 1rem;
+    }
+
     /* call to action */
-    .action h2 {
+    .action .row .d-flex {
+        flex-flow: column;
+        text-align: center;
+    }
+    .action .row .d-flex h3 {
         font-size: 2.1rem;
     }
-    .action h4 {
-        font-size: 1.1rem;
 
+    /* news */
+    .news .container .row .col-md-4 {
+        margin-top: 4rem;
     }
-    .action .button.ml-2 {
-        display: none;
-    }
-
-    /* hero small */
-    .hero-small {
-        padding: 3rem;
-    }
-
-    /* benefits section */
-    .benefits .content h3 {
-        font-size: 1.75rem;
-    } 
     
     /* about page */
     .about-text.w-50 {
         width: 100% !important;
     }
+    .hero-small .container .text-center h2 {
+        font-size: 2rem;
+    }
+
+    /* membership */
+    .about-page .cont .p-4 {
+        padding: 0.425rem !important;
+    }
 
     /* directors */
     .directors .image {
         max-height: 20rem;
-    }
-}
-
-/* Parallax scroll display for small devices */
-@media (max-width: 992px) {
-    .parallax {
-        display: none !important;
-    }
-    .action {
-        display: block !important;
     }
 }
