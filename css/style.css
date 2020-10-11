@@ -47,8 +47,7 @@ body {
 /*==================== NAVBAR HEADER =================*/
 
 .navbar {
-    position: sticky !important;
-    top: 0 !important;
+    position: unset !important;
     background: #fff !important;
     font-size: 1.15rem;
     font-weight: 600;
