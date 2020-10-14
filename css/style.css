@@ -117,7 +117,7 @@ body {
 
 /*==================== HERO =================*/
 .carousel-inner .carousel-item {
-    height: 50vh; 
+    height: 100vh; 
     color: #222;
     background: rgba(0, 0, 0, 0.9);
     position: relative;
@@ -127,18 +127,23 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 100vh;
 }
 .carousel-caption {
     position: absolute;
     top: 50%;
-    transform: translateY(-34%);
+    transform: translateY(-40%);
+}
+.carousel-caption h4 {
+    width: 75%;
+    color: #fff;
+    text-align: left;
 }
 .carousel-caption h3 {
     width: 75%;
     color: #fff;
     text-align: left;
-    font-size: 3.7rem;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -155,18 +160,19 @@ body {
 
 
 /*==================== ABOUT SECTION =====================*/
-/* .about {
-    /* background: #0a7fc3; */
-} */
+.about {
+    background: rgb(1, 29, 71);
+}
 .heading-1 {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.01rem;
-    color: #444;
+    color: #ccc;
 }
 .heading-2 {
     color: #121212;
+    color: #fff;
     font-weight: 700;
 }
 .about-text p {
@@ -174,14 +180,17 @@ body {
     color: #ccc;   
 }
 .about .btn {
-    background-color: #111;
+    background-color:  #fe346e;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 .about .btn a {
-    color: #ccc;
+    color: #fff;
     font-size: 1.5rem;
     text-decoration: none;
+}
+.about .btn::after {
+    background-color: #0a7fc3;
 }
 
 /*==================== STATS SECTION =====================*/
