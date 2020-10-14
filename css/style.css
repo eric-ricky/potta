@@ -9,6 +9,9 @@ body {
     color: #555;
     font-family: 'Poppins', sans-serif;
 }
+ul {
+    list-style: none;
+}
 .heading {
     color: #474647;
     font-size: 2rem;
