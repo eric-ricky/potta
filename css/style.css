@@ -131,6 +131,7 @@ ul {
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
+    animation: zoom 40s linear 10ms infinite;
 }
 .carousel-caption {
     position: absolute;
@@ -159,8 +160,12 @@ ul {
 }
 .carousel-control-prev {background-image: none;}
 .carousel-control-next {background-image: none;}
-.carousel-indicators .active {background-color: #fe346e;} *
+.carousel-indicators .active {background-color: #fe346e;} 
 
+@keyframes zoom {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.9);}
+}
 
 /*==================== ABOUT SECTION =====================*/
 .about {
