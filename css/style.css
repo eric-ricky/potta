@@ -68,7 +68,7 @@ ul {
 .navbar-toggler .toggler-icon {
   width: 2.45rem;
   height: 0.35rem;
-  background-color: #222;
+  background-color: rgb(108, 120, 153);
   margin-bottom: 0.25rem;
   outline: none !important;
 }
